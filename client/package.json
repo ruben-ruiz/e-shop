@@ -4,16 +4,29 @@
   "description": "frontend for e-shop",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack server --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
   },
   "author": "Ruben Ruiz",
   "license": "ISC",
   "dependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/plugin-transform-runtime": "^7.14.5",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "axios": "^0.21.1",
+    "babel-loader": "^8.2.2",
     "jest": "^27.0.6",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
     "react-redux": "^7.2.4",
     "redux": "^4.1.0",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "webpack": "^5.45.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
   }
 }

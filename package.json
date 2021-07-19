@@ -1,0 +1,19 @@
+{
+  "name": "e-shop-server",
+  "version": "1.0.0",
+  "description": "server for e-shop",
+  "main": "category-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruben-ruiz/e-shop.git"
+  },
+  "author": "Ruben Ruiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ruben-ruiz/e-shop/issues"
+  },
+  "homepage": "https://github.com/ruben-ruiz/e-shop#readme"
+}
