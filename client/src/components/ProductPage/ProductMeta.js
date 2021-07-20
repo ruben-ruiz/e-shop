@@ -19,9 +19,7 @@ const ProductMeta = ({ item }) => {
         </div>
         <div className="productMeta-colors">
           {item.colors.map(c =>
-            <div>
-              <img src={`https://www.jcrew.com/s7-img-facade/${item.productCode}_${c.colorCode}_sw`}/>
-            </div>
+              <img key={c.colorCode} src={`https://www.jcrew.com/s7-img-facade/${item.productCode}_${c.colorCode}_sw`}/>
           )}
         </div>
       </>:
