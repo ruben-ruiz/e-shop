@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { HashRouter, Switch, Route, Redirect } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { getProducts } from '../actions/productsActions';
+import Overview from './ProductPage/Overview';
+import Results from './ProductSearch/Results';
 import axios from 'axios';
 
 const App = () => {
@@ -15,15 +18,22 @@ const App = () => {
   }, [])
 
   return (
-    <>
-    {products.map(product => {
-      return (
-        <div>
-          {product.productId}
-        </div>
-      )
-    })}
-    </>
+    <HashRouter>
+      <Switch>
+        <Route
+          path="/p/womens_category/sweaters/pullover/:description/:code"
+          component={Overview}
+        />
+        <Route
+          path="/p/womens_category/sweaters/pullover"
+          component={Results}
+        />
+        <Route exact path="/">
+          <Redirect to="/p/womens_category/sweaters/pullover"/>
+        </Route>
+        <Route render={() => <Redirect to="/" />} />
+      </Switch>
+    </HashRouter>
   )
 }
 

@@ -7,7 +7,7 @@ const PUB_DIR = path.join(__dirname, '/public');
 module.exports = {
   entry: path.join(SRC_DIR, 'index.js'),
   output: {
-    path: path.resolve(OUT_DIR),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
   },
   module: {
