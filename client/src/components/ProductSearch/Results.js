@@ -1,8 +1,11 @@
 import React from 'react';
+import Products from './Products';
+import SearchCriteria from './SearchCriteria';
 
-const Results = () => (
+const Results = ({products, navigation, sortBy, shopBy}) => (
   <div className="results">
-    Results
+    <SearchCriteria navigation={navigation} sortBy={sortBy} shopBy={shopBy} />
+    <Products products={products}/>
   </div>
 )
 

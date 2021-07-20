@@ -21,13 +21,13 @@ const App = () => {
     <HashRouter>
       <Switch>
         <Route
-          path="/p/womens_category/sweaters/pullover/:description/:code"
-          component={Overview}
-        />
+          path="/p/womens_category/sweaters/pullover/:description/:code">
+            <Overview />
+        </Route>
         <Route
-          path="/p/womens_category/sweaters/pullover"
-          component={Results}
-        />
+          path="/p/womens_category/sweaters/pullover">
+            <Results products={products} sortBy={sortBy} navigation={navigation} shopBy={shopBy} />
+        </Route>
         <Route exact path="/">
           <Redirect to="/p/womens_category/sweaters/pullover"/>
         </Route>
