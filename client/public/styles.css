@@ -25,6 +25,11 @@ body {
 .card {
   width: 25rem;
   height: min-content;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 2px 2px 10px grey;
 }
 
 .card-display {

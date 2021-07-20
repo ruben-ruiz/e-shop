@@ -21,8 +21,8 @@ const App = () => {
     <HashRouter>
       <Switch>
         <Route
-          path="/p/womens_category/sweaters/pullover/:description/:code">
-            <Overview />
+          path="/p/womens_category/sweaters/pullover/:description/:productCode">
+            <Overview products={products} />
         </Route>
         <Route
           path="/p/womens_category/sweaters/pullover">

@@ -1,8 +1,15 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 
 const ItemCard = ({item}) => {
+  const history = useHistory();
   return (
-    <div className="card">
+    // <div className="card" onClick={() =>
+    //   history.push({
+    //     pathname: item.url,
+    //     state: {item}
+    //   })}>
+    <div className="card" onClick={() => history.push(item.url)}>
       <div className="card-display">
         <img src={`https://www.jcrew.com/s7-img-facade/${item.productCode}_${item.defaultColorCode}`} />
       </div>
