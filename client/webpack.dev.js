@@ -2,6 +2,7 @@ const path = require('path');
 
 const SRC_DIR = path.join(__dirname, '/src');
 const OUT_DIR = path.join(__dirname, '/dist');
+const PUB_DIR = path.join(__dirname, '/public');
 
 module.exports = {
   entry: path.join(SRC_DIR, 'index.js'),
@@ -35,4 +36,8 @@ module.exports = {
   },
   mode: 'development',
   devtool: 'inline-source-map',
+  devServer: {
+    contentBase: PUB_DIR,
+    port: 9000
+  }
 };
