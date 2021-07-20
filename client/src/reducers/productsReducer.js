@@ -1,13 +1,9 @@
-import { product } from './productReducer';
 export const products = (state = [], action) => {
     switch (action.type) {
-      case 'ADD_TODO':
+      case 'GET_PRODUCTS':
         return [
-          ...state,
-          todo(undefined, action)
+          ...state.concat(action.payload)
         ];
-      case 'TOGGLE_TODO':
-        return state.map(t => todo (t, action));
       default:
         return state;
     }
