@@ -60,3 +60,29 @@ body {
   font-weight: 700;
   font-size: 2.3rem;
 }
+
+.overview {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "img img img des des"
+    "img img img des des"
+    "img img img des des"
+    "rel rel rel des des"
+    ". . . des des";
+}
+
+.productView {
+  grid-area: img;
+}
+
+.productView-main img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.productMeta {
+  grid-area: des;
+}
