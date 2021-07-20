@@ -1,4 +1,5 @@
 import React from 'react';
+import ItemCard from '../Cards/ItemCard';
 
 const Products = ({products}) => {
   // removing duplicate productIds and retaining uniques
@@ -6,7 +7,7 @@ const Products = ({products}) => {
 
   return (
     <div className="products">
-      {items.map(item => <div key={item.productId}>{item.productId}</div>)}
+      {items.map(item => <ItemCard key={item.productId} item={item} />)}
     </div>
   );
 }
