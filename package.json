@@ -4,8 +4,8 @@
   "description": "server for e-shop",
   "main": "category-server.js",
   "scripts": {
-    "start-dev": "nodemon category.js",
-    "start": "node category.js"
+    "start-dev": "nodemon category-server.js",
+    "start": "node category-server.js"
   },
   "repository": {
     "type": "git",
