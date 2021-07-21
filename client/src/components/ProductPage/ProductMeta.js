@@ -14,14 +14,15 @@ const ProductMeta = ({ item }) => {
         <h2 id="productMeta-code">
           {`Item ${item.productCode}`}
         </h2>
-        <div className="productMeta-price">
+        <h2 className="productMeta-price">
           {item.listPrice.formatted}
-        </div>
+        </h2>
         <div className="productMeta-colors">
           {item.colors.map(c =>
               <img key={c.colorCode} src={`https://www.jcrew.com/s7-img-facade/${item.productCode}_${c.colorCode}_sw`}/>
           )}
         </div>
+        <button id='addBag'>ADD TO BAG</button>
       </>:
         <></>
       }

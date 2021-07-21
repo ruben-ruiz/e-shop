@@ -70,13 +70,18 @@ body {
     "img img img des des"
     "img img img des des"
     "img img img des des"
-    "rel rel rel des des"
-    ". . . des des";
+    "rel rel rel . ."
+    ". . . . .";
 }
 
 .productView {
   grid-area: img;
   margin-bottom: 3rem;
+}
+
+.productView-main {
+  height: 60rem;
+  /* width: 60rem; */
 }
 
 .productView-main img {
@@ -88,6 +93,18 @@ body {
 .productMeta {
   grid-area: des;
   padding-left: 2rem;
+}
+
+#productMeta-badge {
+  margin-bottom: 2rem;
+}
+
+#productMeta-code {
+  margin-bottom: 4rem;
+}
+
+.productMeta-price {
+  margin-bottom: 6rem;
 }
 
 .productMeta-colors {
@@ -106,6 +123,18 @@ body {
   border: 3px solid black;
 }
 
+#addBag {
+  width: 70%;
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-top: 8rem;
+}
+
 .relatedProducts {
   grid-area: rel;
 }
@@ -113,11 +142,13 @@ body {
 .relatedProducts-items {
   display: flex;
   gap: 1rem;
+  height: 20rem;
+  width: 20rem;
 }
 
 .relatedProducts-items img {
-  height: 30%;
-  width: 30%;
+  height: 100%;
+  width: 100%;
   object-fit: contain;
   cursor: pointer;
 }
