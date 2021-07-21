@@ -62,6 +62,7 @@ body {
 }
 
 .overview {
+  margin: 3rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
@@ -75,6 +76,7 @@ body {
 
 .productView {
   grid-area: img;
+  margin-bottom: 3rem;
 }
 
 .productView-main img {
@@ -85,6 +87,7 @@ body {
 
 .productMeta {
   grid-area: des;
+  padding-left: 2rem;
 }
 
 .productMeta-colors {
@@ -101,4 +104,20 @@ body {
 
 .productMeta-colors img:hover {
   border: 3px solid black;
+}
+
+.relatedProducts {
+  grid-area: rel;
+}
+
+.relatedProducts-items {
+  display: flex;
+  gap: 1rem;
+}
+
+.relatedProducts-items img {
+  height: 30%;
+  width: 30%;
+  object-fit: contain;
+  cursor: pointer;
 }
